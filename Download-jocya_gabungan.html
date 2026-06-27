@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jocya Digital - Gabungan</title>
+    
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .tab-container { 
+            width: 100%; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        .tab-buttons { 
+            display: flex; 
+            background: #f1f5f9; 
+            border-bottom: 2px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+        .tab-btn { 
+            flex: 1;
+            padding: 16px 20px; 
+            cursor: pointer; 
+            border: none; 
+            background: transparent;
+            font-size: 15px;
+            font-weight: 600;
+            color: #64748b;
+            transition: all 0.2s;
+        }
+        .tab-btn:hover { background: #e2e8f0; }
+        .tab-btn.active { 
+            background: #fff; 
+            color: #0f172a;
+            border-bottom: 3px solid #3b82f6;
+            margin-bottom: -2px;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        
+        /* CSS Web 1 */
+        
+        
+        /* CSS Web 2 */
+        
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="openTab(event, 'web1')">Jocya Digital Hapus Pass</button>
+            <button class="tab-btn" onclick="openTab(event, 'web2')">Jocya Remove Password</button>
+        </div>
+        
+        <div id="web1" class="tab-content active">
+            https://l.meta.ai/?u=https%3A%2F%2Fcdn.fbsbx.com%2Fv%2Ft65.102178-21%2F732205657_1286611403254522_3340757977981427658_n.jpg%2Fjocya_digital_hapus_pass_web_artifact_9_bd50304bb902.html%3F_nc_ht%3Dcdn.fbsbx.com%26_nc_ohc%3DPka7lmT65HgQ7kNvwEs5V3N%26sdl%3D0%26ccb%3D14-4%26oh%3D00_Af_FfVnfqMoLppapH6gaBmDfqnLRYcljsX_ygf0CrWVxlw%26oe%3D6A3EAB24%26_nc_sid%3D4ee932&h=AUBVD8t5ZaUA1QZS5OJjukJS_J6w8eNi04mZaD7JuOVll3LtT2p3CdrehRNZ17nOGZaw-3PmoSBPcAFpGFcRECiLZYua-Lglhu9LgQQtjRzZFzTAqHkqP40gdxwKQ4jHP9MF0153m6d7uGDQFRkeOQ
+        </div>
+        
+        <div id="web2" class="tab-content">
+            https://l.meta.ai/?u=https%3A%2F%2Fcdn.fbsbx.com%2Fv%2Ft65.102178-21%2F733194744_1236118642908406_6873719749316614908_n.jpg%2Fjocya_remove_password_unlimited_web_artifact_31_7f416f2e0c66.html%3F_nc_ht%3Dcdn.fbsbx.com%26_nc_ohc%3DBdGDpYgUWVEQ7kNvwGQ4yu7%26sdl%3D0%26ccb%3D14-4%26oh%3D00_Af_Ys1DkBDf6b3G-v7k4mgMOgMqpjPgQtzR7SiWHhlKCvg%26oe%3D6A3FE95D%26_nc_sid%3D4ee932&h=AUBVD8t5ZaUA1QZS5OJjukJS_J6w8eNi04mZaD7JuOVll3LtT2p3CdrehRNZ17nOGZaw-3PmoSBPcAFpGFcRECiLZYua-Lglhu9LgQQtjRzZFzTAqHkqP40gdxwKQ4jHP9MF0153m6d7uGDQFRkeOQ
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            const tabContents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+            const tabBtns = document.getElementsByClassName('tab-btn');
+            for (let i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove('active');
+            }
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+        
+        // JS Web 1
+        
+        
+        // JS Web 2
+        
+    </script>
+</body>
+</html>
